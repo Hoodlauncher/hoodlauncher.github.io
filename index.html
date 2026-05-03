@@ -1,29 +1,47 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="lArmfoLq14crXGPqYWRblxK1RZmHxkKhG-hh5jHGbrY" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hood Launcher</title>
     
-    <!-- Meta Tags لتحسين ظهورك في جوجل -->
+    <title>Hood Launcher | Gamers Hub</title>
+    
+    <!-- Standard Meta Tags -->
     <meta name="description" content="Hood Launcher is a game launcher for Windows. Download games, manage your library, track achievements, and play with friends. Organize your gaming experience.">
-    <meta name="keywords" content="hood Launcher, Hood launcher, Hood La, Hood lancher, hood lansher, Game Launcher, Mo3taz, Hood, Mtaaz, gaming platform, PC games, game management, achievement tracking, multiplayer gaming, Windows games, game library, game downloader, gaming hub, game aggregator, gaming software, game organizer, PC gaming launcher, game distribution">
-    <meta name="author" content="Hood Launcher Team">
+    <meta name="keywords" content="hood Launcher, Hood launcher, Hood La, Hood lancher, hood lansher, Game Launcher, Mo3taz, Hood, Mtaaz, gaming platform, PC games, game management, achievement tracking, multiplayer gaming,هود لانشر, Windows games, game library, game downloader, gaming hub, game aggregator, gaming software, game organizer, PC gaming launcher, game distribution">
+    <meta name="author" content="Mo3taz">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Hood Launcher">
-    <meta property="og:description" content="Hood Launcher is a game launcher for Windows. Download games, manage your library, track achievements, and play with friends.">
-    <meta property="og:type" content="website">
     <meta name="theme-color" content="#000000">
+
+    <!-- Open Graph (Facebook, Discord, Google Search) -->
+    <meta property="og:title" content="Hood Launcher | Gamers Hub">
+    <meta property="og:description" content="Download games, manage your library, and track achievements with Hood Launcher for Windows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
+    <!-- IMPORTANT: Google needs PNG or JPG, not SVG for the thumbnail -->
+    <meta property="og:image" content="https://github.iologo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hood Launcher">
+    <meta name="twitter:description" content="The ultimate game launcher for Windows.">
+    <meta name="twitter:image" content="https://github.iologo.png">
+
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <meta property="og:image" content="logo.svg">
+    <link rel="apple-touch-icon" href="https://github.iologo.png">
+
     <style>
         body, html {
             margin: 0; padding: 0;
             height: 100%; width: 100%;
-            overflow: hidden; /* لمنع التمرير المزدوج */
-            background-color: #000; /* لون خلفية متناسق أثناء التحميل */
+            overflow: hidden;
+            background-color: #000;
         }
         iframe {
             position: absolute;
@@ -31,11 +49,21 @@
             width: 100%; height: 100%;
             border: none;
         }
+        .loader {
+            position: fixed;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
+    <div class="loader">Loading Hood Launcher...</div>
+    
     <iframe 
-        src="https://mtaaz-mo3tazlauncher.hf.space/page/" 
+        src="https://github.com/Hoodlauncher/hoodlauncher.github.io/blob/main/logo.png" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; display-capture"
         allowfullscreen>
     </iframe>
