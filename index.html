@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Site Verification -->
+    <!-- تحسين سرعة الاتصال بالسيرفر الخارجي -->
+    <link rel="preconnect" href="https://mtaaz-mo3tazlauncher.hf.space">
+    
     <meta name="google-site-verification" content="lArmfoLq14crXGPqYWRblxK1RZmHxkKhG-hh5jHGbrY" />
     <meta charset="UTF-8">
-    
-    <!-- FIX: Allowed user scaling for better Accessibility (Lighthouse requirement) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Hood Launcher | Gamers Hub</title>
     
-    <!-- Standard Meta Tags -->
-    <meta name="description" content="Hood Launcher is a high-performance game launcher for Windows. Download games, manage your library, track achievements, and enjoy a seamless gaming experience.">
-    <meta name="keywords" content="Hood Launcher, game launcher, PC games, Windows gaming, game management, achievement tracking, multiplayer gaming, free game launcher, gaming platform, Mo3taz, game launcher windows">
+    <meta name="description" content="Hood Launcher is the ultimate free Windows game launcher. Manage your library, download PC games, track achievements, and enjoy high-performance gaming.">
+    <meta name="keywords" content="Hood Launcher, HoodLauncher, Mo3taz Launcher, best free game launcher 2026, PC game library manager, universal game launcher, open source game launcher, Steam alternative launcher, gaming hub for windows, track pc game achievements, game downloader for pc, Hydra Launcher, Mo3taz">
+    
     <meta name="author" content="Mo3taz">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#000000">
 
-    <!-- Open Graph (Facebook, Discord, Google Search) -->
-    <meta property="og:title" content="Hood Launcher | Gamers Hub">
-    <meta property="og:description" content="Download games, manage your library, and track achievements with Hood Launcher for Windows.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hood Launcher | All-In-One Gamers Hub">
+    <meta property="og:description" content="The fastest way to manage your PC game library. Download, track, and play in one secure place.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hoodlauncher.github.io">
-    <meta property="og:image" content="https://hoodlauncher.github.io/logo.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/png">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hood Launcher">
-    <meta name="twitter:description" content="The ultimate game launcher for Windows.">
-    <meta name="twitter:image" content="https://hoodlauncher.github.io/logo.png">
+    <meta property="og:url" content="https://github.io">
+    <meta property="og:image" content="https://github.io/logo.png">
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <link rel="apple-touch-icon" href="https://hoodlauncher.github.io/logo.png">
-    
-    <!-- SEO: Canonical Link -->
-    <link rel="canonical" href="https://hoodlauncher.github.io">
+    <link rel="apple-touch-icon" href="https://github.io/logo.png">
+    <link rel="canonical" href="https://github.io">
 
     <style>
         body, html {
@@ -46,34 +35,55 @@
             height: 100%; width: 100%;
             overflow: hidden;
             background-color: #000;
+            font-family: system-ui, -apple-system, sans-serif;
         }
         iframe {
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             border: none;
+            display: block;
         }
         .loader {
             position: fixed;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            font-family: Arial, sans-serif;
-            z-index: -1;
+            z-index: 1;
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
     <main>
-        <div class="loader">Loading Hood Launcher...</div>
+        <div id="loading-text" class="loader">Loading Hood Launcher...</div>
         
-        <!-- FIX: Added 'title' attribute for Screen Readers (Accessibility fix) -->
         <iframe 
+            id="main-frame"
             src="https://mtaaz-mo3tazlauncher.hf.space/page/" 
-            title="Hood Launcher Interface"
+            title="Hood Launcher Main Interface"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; display-capture"
             allowfullscreen>
         </iframe>
     </main>
+
+    <script>
+        // إخفاء نص التحميل عند جاهزية الإطار
+        const frame = document.getElementById('main-frame');
+        const loader = document.getElementById('loading-text');
+
+        frame.onload = function() {
+            loader.style.display = 'none';
+        };
+
+        // تحسين الأداء: تأخير تحميل ملف الصوت الثقيل لتقليل ضغط الشبكة عند البداية
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const audio = new Audio('https://mtaaz-mo3tazlauncher.hf.space/page/lostsoul.mp3');
+                audio.volume = 0.5;
+                // المتصفحات تمنع التشغيل التلقائي للصوت عادةً إلا بعد ضغطة من المستخدم
+            }, 3000); // تحميل الصوت بعد 3 ثوانٍ من اكتمال الصفحة
+        });
+    </script>
 </body>
 </html>
