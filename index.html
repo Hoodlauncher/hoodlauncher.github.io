@@ -4,13 +4,15 @@
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="lArmfoLq14crXGPqYWRblxK1RZmHxkKhG-hh5jHGbrY" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- FIX: Allowed user scaling for better Accessibility (Lighthouse requirement) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Hood Launcher | Gamers Hub</title>
     
     <!-- Standard Meta Tags -->
-    <meta name="description" content="Hood Launcher is a game launcher for Windows. Download games, manage your library, track achievements, and play with friends. Organize your gaming experience.">
-    <meta name="keywords" content="hood Launcher, Hood launcher, Hood La, Hood lancher, hood lansher, Game Launcher, Mo3taz, Hood, Mtaaz, gaming platform, PC games, game management, achievement tracking, multiplayer gaming,هود لانشر, Windows games, game library, game downloader, gaming hub, game aggregator, gaming software, game organizer, PC gaming launcher, game distribution">
+    <meta name="description" content="Hood Launcher is a high-performance game launcher for Windows. Download games, manage your library, track achievements, and enjoy a seamless gaming experience.">
+    <meta name="keywords" content="hood Launcher, Hood launcher, Game Launcher, Mo3taz, Hood, Mtaaz, gaming platform, PC games, game management, achievement tracking, multiplayer gaming, Windows games, game library, game downloader">
     <meta name="author" content="Mo3taz">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#000000">
@@ -20,7 +22,6 @@
     <meta property="og:description" content="Download games, manage your library, and track achievements with Hood Launcher for Windows.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://github.io">
-    <!-- IMPORTANT: Google needs PNG or JPG, not SVG for the thumbnail -->
     <meta property="og:image" content="https://github.iologo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -35,6 +36,9 @@
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="apple-touch-icon" href="https://github.iologo.png">
+    
+    <!-- SEO: Canonical Link -->
+    <link rel="canonical" href="https://github.io">
 
     <style>
         body, html {
@@ -60,12 +64,16 @@
     </style>
 </head>
 <body>
-    <div class="loader">Loading Hood Launcher...</div>
-    
-    <iframe 
-        src="https://mtaaz-mo3tazlauncher.hf.space/page/" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; display-capture"
-        allowfullscreen>
-    </iframe>
+    <main>
+        <div class="loader">Loading Hood Launcher...</div>
+        
+        <!-- FIX: Added 'title' attribute for Screen Readers (Accessibility fix) -->
+        <iframe 
+            src="https://mtaaz-mo3tazlauncher.hf.space/page/" 
+            title="Hood Launcher Interface"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; display-capture"
+            allowfullscreen>
+        </iframe>
+    </main>
 </body>
 </html>
