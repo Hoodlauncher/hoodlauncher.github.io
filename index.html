@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- تحسين سرعة الاتصال بالسيرفر الخارجي -->
     <link rel="preconnect" href="https://mtaaz-mo3tazlauncher.hf.space">
     
     <meta name="google-site-verification" content="lArmfoLq14crXGPqYWRblxK1RZmHxkKhG-hh5jHGbrY" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Hood Launcher | Gamers Hub</title>
+    <title>Hood Launcher | Free PC Game Launcher & Gamers Hub 2026</title>
     
     <meta name="description" content="Hood Launcher is the ultimate free Windows game launcher. Manage your library, download PC games, track achievements, and enjoy high-performance gaming.">
-    <meta name="keywords" content="Hood Launcher, HoodLauncher, Mo3taz Launcher, best free game launcher 2026, PC game library manager, universal game launcher, open source game launcher, Steam alternative launcher, gaming hub for windows, track pc game achievements, game downloader for pc, Hydra Launcher, Mo3taz">
+    <meta name="keywords" content="Hood Launcher, HoodLauncher, Mo3taz Launcher, best free game launcher 2026, PC game library manager, universal game launcher, open source game launcher">
     
     <meta name="author" content="Mo3taz">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#000000">
+    <meta name="language" content="English">
 
-    <!-- Open Graph -->
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="Hood Launcher | All-In-One Gamers Hub">
     <meta property="og:description" content="The fastest way to manage your PC game library. Download, track, and play in one secure place.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.io">
-    <meta property="og:image" content="https://github.io/logo.png">
+    <meta property="og:url" content="https://hoodlauncher.github.io">
+    <meta property="og:image" content="https://hoodlauncher.github.io/logo.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hood Launcher | Free PC Game Launcher">
+    <meta name="twitter:description" content="The fastest way to manage your PC game library">
+    <meta name="twitter:image" content="https://hoodlauncher.github.io/logo.png">
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <link rel="apple-touch-icon" href="https://github.io/logo.png">
-    <link rel="canonical" href="https://github.io">
+    <link rel="apple-touch-icon" href="https://hoodlauncher.github.io/logo.png">
+    <link rel="canonical" href="https://hoodlauncher.github.io">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Hood Launcher",
+      "description": "The ultimate free Windows game launcher for managing PC game libraries",
+      "url": "https://hoodlauncher.github.io",
+      "image": "https://hoodlauncher.github.io/logo.png",
+      "author": {
+        "@type": "Person",
+        "name": "Mo3taz"
+      },
+      "operatingSystem": "Windows",
+      "applicationCategory": "GameApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 
     <style>
         body, html {
@@ -52,9 +82,30 @@
             z-index: 1;
             pointer-events: none;
         }
+        .seo-content {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
+    <!-- Hidden SEO content for search engines -->
+    <div class="seo-content">
+        <h1>Hood Launcher - Free PC Game Launcher & Gamers Hub</h1>
+        <p>Hood Launcher is the ultimate free Windows game launcher for managing your PC game library, downloading games, tracking achievements, and enjoying high-performance gaming.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Universal game library management</li>
+            <li>Free game downloads</li>
+            <li>Achievement tracking</li>
+            <li>High-performance gaming</li>
+            <li>Open-source game launcher</li>
+        </ul>
+    </div>
+
     <main>
         <div id="loading-text" class="loader">Loading Hood Launcher...</div>
         
@@ -68,7 +119,6 @@
     </main>
 
     <script>
-        // إخفاء نص التحميل عند جاهزية الإطار
         const frame = document.getElementById('main-frame');
         const loader = document.getElementById('loading-text');
 
@@ -76,13 +126,11 @@
             loader.style.display = 'none';
         };
 
-        // تحسين الأداء: تأخير تحميل ملف الصوت الثقيل لتقليل ضغط الشبكة عند البداية
         window.addEventListener('load', () => {
             setTimeout(() => {
                 const audio = new Audio('https://mtaaz-mo3tazlauncher.hf.space/page/lostsoul.mp3');
                 audio.volume = 0.5;
-                // المتصفحات تمنع التشغيل التلقائي للصوت عادةً إلا بعد ضغطة من المستخدم
-            }, 3000); // تحميل الصوت بعد 3 ثوانٍ من اكتمال الصفحة
+            }, 3000);
         });
     </script>
 </body>
